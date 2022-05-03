@@ -67,7 +67,7 @@ header{
 }
 
 .section-distance{
-    margin-top: 30px;
+    margin-top: 35px;
     margin-bottom: 30px;
 }
 
@@ -127,15 +127,18 @@ section p{
 }
 
 /* Simboli check e x */
-.check{
+p.check::before{
+    content: ' \2713';
     color: rgb(31, 177, 87);
     border: 1px solid rgb(31, 177, 87);
     border-radius: 50%;
     padding: 3px;
 }
-.uncheck{
+p.uncheck::before{
+    content: ' \2717';
     color: rgb(209, 40, 40);
     border: 1px solid rgb(209, 40, 40);
     border-radius: 50%;
     padding: 3px;
 }
+
